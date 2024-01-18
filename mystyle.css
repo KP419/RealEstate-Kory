@@ -1,0 +1,64 @@
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+/*utilities*/
+.flex-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+}
+.flex-header-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35vh;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/*header*/
+.site-init{
+    background-image: url(img/header.jpg);
+    height: 40vh;
+    background-size: cover;
+    color: white;
+}
+.menu a{
+    margin-right: 20px;
+}
+.site-init{
+    font-size: 20px;
+}
+/*about us*/
+.flex-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*house-item*/
+.house-item{
+    background-color: antiquewhite;
+    width: 400px;
+}
+.price{
+    color: green;
+    font-weight: 100;
+}
