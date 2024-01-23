@@ -1,4 +1,10 @@
 /*global*/
+:root{
+    --primary:orange(182,92,19)
+}
+html{
+    font-size: 62.5%;/* 10px = 1rem*/
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +19,12 @@ a{
 img{
     max-width: 100%;
 }
+h2{
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
 /*utilities*/
 .flex-header{
     display: flex;
@@ -21,7 +33,7 @@ img{
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    height: 100px;
+    height: 10rem;
 }
 .flex-header-v{
     display: flex;
@@ -33,10 +45,23 @@ img{
     width: 80%;
     margin: 0 auto;
 }
-.container2{
-    width: 80%;
-    margin: 0 auto
 
+.btn{
+    display: block;
+    font: 16px;
+    background-color: var(--primary);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+@media(max-width:768px){
+    .flex-header{
+        flex-direction: column;
+    }    
+    .flex-header-v{
+        height: 20vh;
+        text-align: center;
+    }
 }
 /*header*/
 .site-init{
@@ -45,29 +70,72 @@ img{
     background-size: cover;
     color: white;
 }
-.menu a{
-    margin-right: 20px;
+.site-second{
+    background-color: black;
+    color: white;
 }
-.site-init{
-    font-size: 20px;
+.menu a{
+    margin-right: 2rem;
+}
+.site-init p{
+    font-size: 2rem;
+}
+@media(max-width:768px){
+    .site-init{
+        height: 22vh;
+    }
+    .site-init p{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:768px){
+    .flex-about{
+        flex-direction: column;
+    }
+    
 }
 /*about us*/
 .flex-about{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 /*house-item*/
+.flex-house-item{
+    display: flex;
+    flex-direction: row;
+}
 .house-item{
     background-color: antiquewhite;
-    width: 400px;
+    width: 40rem;
 }
 .price{
     color:green;
     font-weight: 100;
 }
-.house2-item{
-    background-color: antiquewhite;
-    width: 400px;
+/*contact form*/
+.form-container{
+
+}
+fieldset{
+    padding: 1rem;
+}
+legend,label,input{
+    font-size: 1.6rem;
+}
+.input-container{
+    margin: 1rem;
+}
+.input-container input,.input-container textarea{
+    width: 70%;
+    background-color: rgb(110, 107, 107);
+    border: none;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+.input-container label{
+    display: inline-block;
+    width: 10rem;
+    text-align: right;
+    margin-right: 1rem;
 }
