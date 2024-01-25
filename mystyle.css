@@ -49,7 +49,7 @@ h2{
 .btn{
     display: block;
     font: 16px;
-    background-color: var(--primary);
+    background-color: black
     padding: 1rem;
     text-align: center;
     margin: 1rem 0;
@@ -138,4 +138,15 @@ legend,label,input{
     width: 10rem;
     text-align: right;
     margin-right: 1rem;
+}
+/*about page*/
+.btn2{
+    display: block;
+    background-color: aqua;
+    display: block;
+    font: 16px;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+
 }
